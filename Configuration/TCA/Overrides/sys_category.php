@@ -28,7 +28,6 @@ $imageSettings = [
     'foreign_match_fields' => [
         'fieldname' => 'images',
         'tablenames' => 'sys_category',
-        'table_local' => 'sys_file',
     ],
 ];
 

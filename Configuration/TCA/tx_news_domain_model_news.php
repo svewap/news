@@ -19,7 +19,6 @@ $imageSettingsFalMedia = [
     'foreign_match_fields' => [
         'fieldname' => 'fal_media',
         'tablenames' => 'tx_news_domain_model_news',
-        'table_local' => 'sys_file',
     ],
     // custom configuration for displaying fields in the overlay/reference table
     // to use the newsPalette and imageoverlayPalette instead of the basicoverlayPalette
@@ -80,7 +79,6 @@ $imageSettingsFalRelatedFiles = [
     'foreign_match_fields' => [
         'fieldname' => 'fal_related_files',
         'tablenames' => 'tx_news_domain_model_news',
-        'table_local' => 'sys_file',
     ],
 ];
 
