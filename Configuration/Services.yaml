@@ -17,6 +17,12 @@ services:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
 
+  # Public + interface alias so external code (CLI, scheduler, search
+  # indexers, sitemap/record APIs) can obtain a demand from a settings
+  # array without instantiating the controller.
+  GeorgRinger\News\Domain\Factory\DemandFactory:
+    public: true
+  GeorgRinger\News\Domain\Factory\DemandFactoryInterface: '@GeorgRinger\News\Domain\Factory\DemandFactory'
 
   GeorgRinger\News\Utility\ClassCacheManager:
     arguments: ['@news.cache']
